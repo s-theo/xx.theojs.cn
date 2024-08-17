@@ -3,7 +3,8 @@
     "dev": "vitepress dev",
     "build": "vitepress build",
     "preview": "vitepress preview",
-    "prettier": "prettier --write ."
+    "format": "prettier --write .",
+    "format:cheak": "prettier --check ."
   },
   "devDependencies": {
     "prettier": "3.3.3",
