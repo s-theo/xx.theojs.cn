@@ -8,16 +8,16 @@
   },
   "devDependencies": {
     "prettier": "3.3.3",
-    "vitepress": "1.3.2",
+    "vitepress": "1.3.3",
     "vitepress-plugin-google-analytics": "^1.0.2"
   },
   "dependencies": {
-    "lint-staged": "^15.2.8",
+    "lint-staged": "^15.2.9",
     "lunar-javascript": "^1.6.12",
     "markdown-it-footnote": "^4.0.0",
     "simple-git-hooks": "^2.11.1",
-    "@theojs/lumen": "^2.4.5",
-    "vue": "^3.4.37"
+    "@theojs/lumen": "^2.6.2",
+    "vue": "^3.4.38"
   },
   "prettier": {
     "semi": false,
