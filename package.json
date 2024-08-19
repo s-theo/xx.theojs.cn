@@ -16,7 +16,7 @@
     "lunar-javascript": "^1.6.12",
     "markdown-it-footnote": "^4.0.0",
     "simple-git-hooks": "^2.11.1",
-    "@theojs/lumen": "^2.6.2",
+    "@theojs/lumen": "^2.6.3",
     "vue": "^3.4.38"
   },
   "prettier": {
