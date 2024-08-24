@@ -1,6 +1,6 @@
 import { defineConfig } from 'vitepress'
 import { nav, sidebar, head, socialLinks } from './configs'
-import footnote_plugin from 'markdown-it-footnote'
+import { footnote } from '@mdit/plugin-footnote'
 
 export default defineConfig({
   // 站点名称
@@ -25,10 +25,7 @@ export default defineConfig({
 
   // markdown-it插件配置
   markdown: {
-    theme: {
-      light: 'catppuccin-latte',
-      dark: 'dracula-soft'
-    },
+    theme: { light: 'one-light', dark: 'dracula-soft' },
     container: {
       tipLabel: '提示',
       warningLabel: '警告',
@@ -37,7 +34,7 @@ export default defineConfig({
       detailsLabel: '详细信息'
     },
     config: (md) => {
-      md.use(footnote_plugin)
+      md.use(footnote)
     }
   },
 
@@ -64,7 +61,7 @@ export default defineConfig({
 
   // 主题配置
   themeConfig: {
-    // // logo
+    // logo
     logo: { src: 'https://i.theojs.cn/avatar.png', width: 24, height: 24 },
 
     // 社交链接
@@ -86,18 +83,11 @@ export default defineConfig({
     // 上次更新
     lastUpdated: {
       text: '最后更新于',
-      formatOptions: {
-        dateStyle: 'full',
-        timeStyle: 'full',
-        hourCycle: 'h24'
-      }
+      formatOptions: { dateStyle: 'full', timeStyle: 'full', hourCycle: 'h24' }
     },
 
     // 文章翻页
-    docFooter: {
-      prev: '上一篇',
-      next: '下一篇'
-    },
+    docFooter: { prev: '上一篇', next: '下一篇' },
 
     // 移动端 - 返回顶部
     returnToTopLabel: '返回顶部',

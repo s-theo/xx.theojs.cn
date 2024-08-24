@@ -12,11 +12,11 @@
     "vitepress-plugin-google-analytics": "^1.0.2"
   },
   "dependencies": {
+    "@mdit/plugin-footnote": "^0.13.0",
+    "@theojs/lumen": "^2.6.3",
     "lint-staged": "^15.2.9",
     "lunar-javascript": "^1.6.12",
-    "markdown-it-footnote": "^4.0.0",
     "simple-git-hooks": "^2.11.1",
-    "@theojs/lumen": "^2.6.3",
     "vue": "^3.4.38"
   },
   "prettier": {

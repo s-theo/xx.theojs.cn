@@ -4,7 +4,6 @@ import { h } from 'vue'
 
 import '@theojs/lumen/theme'
 
-import { BaziConverter } from './components'
 import {
   DocBox,
   DocLinks,
@@ -30,6 +29,5 @@ export default {
     app.component('Box', DocBox)
     app.component('Links', DocLinks)
     app.component('BoxCube', DocBoxCube)
-    app.component('BZ', BaziConverter)
   }
 }
