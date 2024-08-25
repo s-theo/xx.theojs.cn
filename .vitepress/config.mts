@@ -51,7 +51,7 @@ export default defineConfig({
   },
 
   // 源目录
-  srcDir: 'src',
+  srcDir: 'content',
 
   // 上次更新时间戳
   lastUpdated: true,
@@ -72,7 +72,8 @@ export default defineConfig({
 
     // GitHub编辑页面
     editLink: {
-      pattern: 'https://github.com/Theo-messi/xx.theojs.cn/blob/main/src/:path',
+      pattern:
+        'https://github.com/Theo-messi/xx.theojs.cn/edit/main/content/:path',
       text: '为此页提供修改建议'
     },
 
