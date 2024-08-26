@@ -38,18 +38,6 @@ export default defineConfig({
     }
   },
 
-  // 插件配置
-  vite: {
-    resolve: {
-      alias: [
-        { find: /^.*\/VPFooter\.vue$/, replacement: '@theojs/lumen/Footer' }
-      ]
-    },
-    define: {
-      FooterData: JSON.stringify(require('./data/footerData').Footer_Data)
-    }
-  },
-
   // 源目录
   srcDir: 'content',
 
