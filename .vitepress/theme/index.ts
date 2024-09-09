@@ -11,7 +11,8 @@ import {
   Announcement,
   DocAsideLogo,
   HomeUnderline,
-  HomeFooter
+  HomeFooter,
+  ShareButton
 } from '@theojs/lumen'
 
 import { Aside_Data, Footer_Data } from '../data'
@@ -22,7 +23,8 @@ export default {
     return h(DefaultTheme.Layout, null, {
       'home-hero-info-before': () => h(Announcement),
       'aside-ads-before': () => h(DocAsideLogo, { Aside_Data }),
-      'layout-bottom': () => h(HomeFooter, { Footer_Data })
+      'layout-bottom': () => h(HomeFooter, { Footer_Data }),
+      'aside-outline-before': () => h(ShareButton)
     })
   },
   enhanceApp: ({ app }, ctx) => {
