@@ -17,7 +17,7 @@
     "lint-staged": "^15.2.10",
     "lunar-javascript": "^1.6.12",
     "simple-git-hooks": "^2.11.1",
-    "vue": "^3.5.8"
+    "vue": "^3.5.10"
   },
   "prettier": {
     "semi": false,
