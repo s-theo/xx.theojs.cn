@@ -8,8 +8,8 @@ hero:
   tagline: 中华传统五术书籍传世经典著作
   image: https://doc.theojs.cn/index/home.png
   prelink:
-    title: '🎉 站点迁移至 <u>https://xx.theojs.cn</u><div style="text-align: right; font-weight: bold;"><i class="fas fa-star" style="color: #FFD43B;"></i>Ctrl+D 快速收藏网址</div>'
-    link: https://xx.theojs.cn/
+    title: '🎉 活动不停歇，国庆大狂欢！飞鸟国庆活动开始啦！<div><i class="fa-regular fa-hourglass-half" style="color: var(--vp-c-brand-3)"></i> 活动时间: 即日起至 <span style="color: var(--vp-c-brand-3);font-weight: bold;">2024年10月15日23点59分</span></div>'
+    link: https://fbinv02.fbaff.cc/auth/register?code=RZP3
     target: _blank
   actions:
     - theme: brand
