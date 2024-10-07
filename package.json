@@ -13,11 +13,11 @@
   },
   "dependencies": {
     "@mdit/plugin-footnote": "^0.13.1",
-    "@theojs/lumen": "^3.3.2",
+    "@theojs/lumen": "^3.3.3",
     "lint-staged": "^15.2.10",
     "lunar-javascript": "^1.6.12",
     "simple-git-hooks": "^2.11.1",
-    "vue": "^3.5.10"
+    "vue": "^3.5.11"
   },
   "prettier": {
     "semi": false,
