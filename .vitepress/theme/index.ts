@@ -27,7 +27,7 @@ export default {
       'aside-outline-before': () => h(ShareButton)
     })
   },
-  enhanceApp: ({ app }, ctx) => {
+  enhanceApp: ({ app }) => {
     googleAnalytics({ id: 'G-5SHLV23EGQ' })
     app.component('Home', HomeUnderline)
     app.component('Box', DocBox)
