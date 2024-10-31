@@ -1,7 +1,8 @@
 import type { DefaultTheme } from 'vitepress'
+type SidebarItem = DefaultTheme.SidebarItem
 
 // 侧边栏配置
-export const sidebar: DefaultTheme.Config['sidebar'] = {
+export const sidebar: DefaultTheme.SidebarMulti = {
   '/山/': { base: '/山/', items: Side_Shan() },
   '/医/': { base: '/医/', items: Side_Yi() },
   '/命/': { base: '/命/', items: Side_Ming() },
@@ -13,7 +14,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
 }
 
 // 山
-export function Side_Shan() {
+export function Side_Shan(): SidebarItem[] {
   return [
     {
       // text: '山篇',
@@ -45,7 +46,7 @@ export function Side_Shan() {
 }
 
 // 医
-export function Side_Yi() {
+export function Side_Yi(): SidebarItem[] {
   return [
     {
       // text: '医篇',
@@ -202,7 +203,7 @@ export function Side_Yi() {
 }
 
 // 命
-export function Side_Ming() {
+export function Side_Ming(): SidebarItem[] {
   return [
     {
       // text: '命篇',
@@ -304,7 +305,7 @@ export function Side_Ming() {
   ]
 }
 // --------------------------相篇--------------------------
-export function Side_Xiang() {
+export function Side_Xiang(): SidebarItem[] {
   return [
     {
       // text: '相篇',
@@ -326,7 +327,7 @@ export function Side_Xiang() {
 }
 
 // --------------------------卜篇--------------------------
-export function Side_Bo() {
+export function Side_Bo(): SidebarItem[] {
   return [
     {
       // text: '卜篇',
@@ -508,7 +509,7 @@ export function Side_Bo() {
   ]
 }
 // 相关经典
-export function Side_Jd() {
+export function Side_Jd(): SidebarItem[] {
   return [
     {
       // text: '相关经典',
@@ -531,7 +532,7 @@ export function Side_Jd() {
   ]
 }
 // 提交书籍与纠错
-export function Side_Pr() {
+export function Side_Pr(): SidebarItem[] {
   return [
     {
       // text: '提交书籍与纠错',
@@ -542,7 +543,7 @@ export function Side_Pr() {
   ]
 }
 // 灵宠
-export function Side_Lc() {
+export function Side_Lc(): SidebarItem[] {
   return [
     {
       // text: '灵宠',
