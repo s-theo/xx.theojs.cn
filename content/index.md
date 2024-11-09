@@ -26,10 +26,6 @@ hero:
       text: ❤️ 成为赞助商
       link: https://github.com/sponsors/Theo-messi
 
-    - theme: cta pan
-      text: 云盘资源
-      link: https://share.theojs.cn/
-
     - theme: cta xx
       text: Theo-Docs
       link: https://doc.theojs.cn
