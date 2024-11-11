@@ -26,7 +26,7 @@ hero:
       text: ❤️ 成为赞助商
       link: https://github.com/sponsors/Theo-messi
 
-    - theme: cta xx
+    - theme: lumen theo
       text: Theo-Docs
       link: https://doc.theojs.cn
 
