@@ -1,5 +1,4 @@
 import DefaultTheme from 'vitepress/theme'
-import googleAnalytics from 'vitepress-plugin-google-analytics'
 import { h } from 'vue'
 
 import '@theojs/lumen/theme'
@@ -12,7 +11,8 @@ import {
   DocAsideLogo,
   HomeUnderline,
   HomeFooter,
-  ShareButton
+  ShareButton,
+  googleAnalytics
 } from '@theojs/lumen'
 
 import { Aside_Data, Footer_Data } from '../data'
