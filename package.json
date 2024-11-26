@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@mdit/plugin-footnote": "^0.13.1",
-    "@theojs/lumen": "^4.2.1",
+    "@theojs/lumen": "^5.0.0",
     "lint-staged": "^15.2.10",
     "simple-git-hooks": "^2.11.1",
     "vue": "^3.5.13"
