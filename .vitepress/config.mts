@@ -38,17 +38,6 @@ export default defineConfig({
     }
   },
 
-  // vite插件
-  vite: {
-    css: {
-      preprocessorOptions: {
-        scss: {
-          api: 'modern'
-        }
-      }
-    }
-  },
-
   // 源目录
   srcDir: 'content',
 
