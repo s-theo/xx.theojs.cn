@@ -1,6 +1,8 @@
 import { defineConfig } from 'vitepress'
-import { nav, sidebar, head, socialLinks } from './configs'
+
 import { footnote } from '@mdit/plugin-footnote'
+
+import { head, nav, sidebar, socialLinks } from './configs'
 
 export default defineConfig({
   // 站点名称

@@ -1,20 +1,20 @@
 import DefaultTheme from 'vitepress/theme'
+
 import { h } from 'vue'
 
-import '@theojs/lumen/theme'
-
 import {
-  DocBox,
-  DocLinks,
-  DocBoxCube,
   Announcement,
   DocAsideLogo,
-  HomeUnderline,
+  DocBox,
+  DocBoxCube,
+  DocLinks,
   HomeFooter,
+  HomeUnderline,
   ShareButton,
   googleAnalytics,
   umamiAnalytics
 } from '@theojs/lumen'
+import '@theojs/lumen/theme'
 
 import { Aside_Data, Footer_Data } from '../data'
 

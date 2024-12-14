@@ -1,4 +1,5 @@
 import type { DefaultTheme } from 'vitepress'
+
 type SidebarItem = DefaultTheme.SidebarItem
 
 // 侧边栏配置
