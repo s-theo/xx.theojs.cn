@@ -8,10 +8,11 @@ hero:
   tagline: 中华传统五术书籍传世经典著作
   image: https://doc.theojs.cn/index/home.png
 
-  # prelink:
-  #   title: '🎉 活动不停歇，青云梯 双11 特惠折上折! </br>年付8折/2年付7折/3年付6折 配合优惠码折上折，最高可达48折<div><iconify-icon icon="eos-icons:hourglass" style="font-size: 1rem;"></iconify-icon> 活动时间: 即日起至 <span style="color: var(--vp-c-brand-3); font-weight: bold;">2024年11月17日23点59分</span></div>'
-  #   link: https://qytcc01.qingyunti.pro/register?aff=jjgD79Jd
-  #   target: _blank
+  prelink:
+    title: '🎉 FlyingBird 双旦活动开启咯!
+ </br>月/季/半年付 85折 , 优惠码<span style="color: var(--vp-c-brand-3); font-weight: bold;"> 122485 </span>可重复使用5次</br>年付8折（站内折上折，高达64折 ）<span style="color: var(--vp-c-brand-3); font-weight: bold;"> 122480 </span>可重复使用5次<div><iconify-icon icon="eos-icons:hourglass" style="font-size: 1rem;"></iconify-icon> 活动时间: 即日至 <span style="color: var(--vp-c-brand-3); font-weight: bold;">2025年1月8日23点59分</span></div>'
+    link: https://fbinv02.fbaff.cc/auth/register?code=RZP3
+    target: _blank
 
   actions:
     - theme: brand
