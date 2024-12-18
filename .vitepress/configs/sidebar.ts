@@ -517,7 +517,7 @@ export function Side_Jd(): SidebarItem[] {
       // collapsed: true,
       base: '/相关经典/',
       items: [
-        { text: '道德经', link: '道德经' },
+        { text: '道德经(帛书版)', link: '道德经' },
         { text: '了凡四训', link: '了凡四训' },
         { text: '周易六十四卦', link: '周易六十四卦' },
         { text: '三字经', link: '三字经' },
