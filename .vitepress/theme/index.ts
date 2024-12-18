@@ -11,21 +11,23 @@ import {
   HomeFooter,
   HomeUnderline,
   ShareButton,
+  Twikoo,
   googleAnalytics,
   umamiAnalytics
 } from '@theojs/lumen'
 import '@theojs/lumen/theme'
 
-import { Aside_Data, Footer_Data } from '../data'
+import { Aside_Data, Footer_Data, Twikoo_Data } from '../data'
 
 export default {
   extends: DefaultTheme,
   Layout() {
     return h(DefaultTheme.Layout, null, {
-      'home-hero-info-before': () => h(Announcement),
       'aside-ads-before': () => h(DocAsideLogo, { Aside_Data }),
-      'layout-bottom': () => h(HomeFooter, { Footer_Data }),
-      'aside-outline-before': () => h(ShareButton)
+      'aside-outline-before': () => h(ShareButton),
+      'doc-after': () => h(Twikoo, { Twikoo_Data }),
+      'home-hero-info-before': () => h(Announcement),
+      'layout-bottom': () => h(HomeFooter, { Footer_Data })
     })
   },
   enhanceApp: ({ app }) => {
