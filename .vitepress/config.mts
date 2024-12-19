@@ -25,6 +25,13 @@ export default defineConfig({
     hostname: 'https://xx.theojs.cn'
   },
 
+  // vue配置
+  vue: {
+    template: {
+      compilerOptions: { isCustomElement: (tag) => tag === 'iconify-icon' }
+    }
+  },
+
   // markdown-it插件配置
   markdown: {
     theme: { light: 'one-light', dark: 'dracula-soft' },
