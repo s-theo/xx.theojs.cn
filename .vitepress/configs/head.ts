@@ -1,7 +1,7 @@
 import type { HeadConfig } from 'vitepress'
 
 export const head: HeadConfig[] = [
-  ['link', { rel: 'icon', href: 'https://i.theojs.cn/avatar.png' }],
+  ['link', { rel: 'icon', href: 'https://i.theojs.cn/avatar.webp' }],
   ['meta', { name: 'msapplication-TileColor', content: '#da532c' }],
   ['meta', { name: 'theme-color', content: '#5f67ee' }],
   ['meta', { name: 'author', content: 'Theo-Messi' }],
@@ -22,7 +22,7 @@ export const head: HeadConfig[] = [
   ['meta', { name: 'og:site_name', content: '玄学宝典' }],
   ['meta', { name: 'og:title', content: '玄学宝典' }],
   ['meta', { name: 'og:url', content: 'https://xx.theojs.cn/' }],
-  ['meta', { name: 'og:image', content: 'https://i.theojs.cn/avatar.png' }],
+  ['meta', { name: 'og:image', content: 'https://i.theojs.cn/avatar.webp' }],
   ['meta', { name: 'og:description', content: '中华传统五术书籍传世经典著作' }],
   ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
   ['meta', { name: 'twitter:site', content: '@TheoMessi_' }],
@@ -33,7 +33,7 @@ export const head: HeadConfig[] = [
   ],
   [
     'meta',
-    { name: 'twitter:image', content: 'https://i.theojs.cn/avatar.png' }
+    { name: 'twitter:image', content: 'https://i.theojs.cn/avatar.webp' }
   ],
   [
     'script',

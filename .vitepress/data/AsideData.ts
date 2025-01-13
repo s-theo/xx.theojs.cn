@@ -12,7 +12,7 @@ export const Aside_Data: AsideItem[] = [
   // },
   // {
   //   link: 'https://fbinv02.fbaff.cc/auth/register?code=RZP3',
-  //   image: 'https://i.theojs.cn/docs/202409111237242.png',
+  //   image: 'https://i.theojs.cn/docs/202409111237242.webp',
   //   activity: 'FlyingBird 双旦活动开启',
   //   info1:
   //     '月付 85折 优惠码 <span style="color: var(--vp-c-brand-3)"> 122485 </span>',
@@ -34,7 +34,7 @@ export const Aside_Data: AsideItem[] = [
   },
   {
     link: 'https://fbinv02.fbaff.cc/auth/register?code=RZP3',
-    image: 'https://i.theojs.cn/docs/202409111237242.png',
+    image: 'https://i.theojs.cn/docs/202409111237242.webp',
     activity: 'FlyingBird'
   },
   {
@@ -49,14 +49,14 @@ export const Aside_Data: AsideItem[] = [
   },
   {
     link: 'https://github.com/Theo-Messi/lumen',
-    image: 'https://lumen.theojs.cn/Logo.png',
+    image: 'https://lumen.theojs.cn/Logo.webp',
     name: '@theojs/Lumen',
     hide1: '集成 Vue 功能组件',
     hide2: 'VitePress 主题美化'
   },
   {
     link: 'https://doc.theojs.cn/',
-    image: 'https://i.theojs.cn/avatar.png',
+    image: 'https://i.theojs.cn/avatar.webp',
     name: 'Theo-Docs',
     hide1: '流媒体观影',
     hide2: '一站式服务'
