@@ -59,7 +59,12 @@ export default defineConfig({
   // 主题配置
   themeConfig: {
     // logo
-    logo: { src: 'https://i.theojs.cn/avatar.webp', width: 24, height: 24 },
+    logo: {
+      src: 'https://i.theojs.cn/avatar.webp',
+      width: 24,
+      height: 24,
+      alt: 'Logo'
+    },
 
     // 社交链接
     socialLinks,
@@ -99,7 +104,8 @@ export default defineConfig({
     darkModeSwitchLabel: '主题模式',
 
     // markdown 外部链接图标
-    // externalLinkIcon: true,
+    externalLinkIcon: true,
+
     // 语言切换
     langMenuLabel: '切换语言',
 

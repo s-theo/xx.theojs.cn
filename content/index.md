@@ -27,9 +27,9 @@ hero:
 
     - theme: brand
       text: ❤️ 成为赞助商
-      link: https://github.com/sponsors/Theo-messi
+      link: https://i.theojs.cn/docs/202405201759098.webp
 
-    - theme: lumen theo
+    - theme: custom-alt
       text: Theo-Docs
       link: https://doc.theojs.cn
 
