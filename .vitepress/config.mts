@@ -1,5 +1,7 @@
 import { defineConfig } from 'vitepress'
 
+import llmstxt from 'vitepress-plugin-llms'
+
 import { footnote } from '@mdit/plugin-footnote'
 
 import { head, nav, sidebar, socialLinks } from './configs'
@@ -30,6 +32,11 @@ export default defineConfig({
     template: {
       compilerOptions: { isCustomElement: (tag) => tag === 'iconify-icon' }
     }
+  },
+
+  // vite配置
+  vite: {
+    plugins: [llmstxt({})]
   },
 
   // markdown-it插件配置
