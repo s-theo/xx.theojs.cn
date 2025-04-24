@@ -17,13 +17,19 @@ export const head: HeadConfig[] = [
       content: '玄学, 五术, 经典著作, 中华文化, 易经, 风水, 传统文化'
     }
   ],
-  ['meta', { name: 'og:type', content: 'website' }],
-  ['meta', { name: 'og:locale', content: 'zh-CN' }],
-  ['meta', { name: 'og:site_name', content: '玄学宝典' }],
-  ['meta', { name: 'og:title', content: '玄学宝典' }],
-  ['meta', { name: 'og:url', content: 'https://xx.theojs.cn/' }],
-  ['meta', { name: 'og:image', content: 'https://i.theojs.cn/avatar.webp' }],
-  ['meta', { name: 'og:description', content: '中华传统五术书籍传世经典著作' }],
+  ['meta', { property: 'og:type', content: 'website' }],
+  ['meta', { property: 'og:locale', content: 'zh-CN' }],
+  ['meta', { property: 'og:site_name', content: '玄学宝典' }],
+  ['meta', { property: 'og:title', content: '玄学宝典' }],
+  ['meta', { property: 'og:url', content: 'https://xx.theojs.cn/' }],
+  [
+    'meta',
+    { property: 'og:image', content: 'https://i.theojs.cn/avatar.webp' }
+  ],
+  [
+    'meta',
+    { property: 'og:description', content: '中华传统五术书籍传世经典著作' }
+  ],
   ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
   ['meta', { name: 'twitter:site', content: '@TheoMessi_' }],
   ['meta', { name: 'twitter:title', content: '玄学宝典' }],
@@ -45,7 +51,19 @@ export const head: HeadConfig[] = [
         url: 'https://xx.theojs.cn/',
         name: '玄学宝典',
         description: '中华传统五术书籍传世经典著作',
-        author: { '@type': 'Person', name: 'Theo-Messi' }
+        author: {
+          '@type': 'Person',
+          name: 'Theo-Messi'
+        },
+        image: 'https://i.theojs.cn/avatar.webp',
+        publisher: {
+          '@type': 'Organization',
+          name: 'Theo-Messi',
+          logo: {
+            '@type': 'ImageObject',
+            url: 'https://i.theojs.cn/avatar.webp'
+          }
+        }
       })
     }
   ]
