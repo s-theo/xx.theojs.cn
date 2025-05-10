@@ -34,8 +34,8 @@ export default {
   enhanceApp: ({ app }) => {
     googleAnalytics({ id: 'G-5SHLV23EGQ' })
     umamiAnalytics({
-      id: '3c2b0a9b-996b-4885-810a-f7145b9ef16f',
-      src: 'https://umami.theojs.cn/script.js'
+      id: '05d0addd-9215-4b6d-b753-998173044185',
+      src: 'https://u.theojs.cn/script.js'
     })
     app.component('Home', HomeUnderline)
     app.component('Pill', DocPill)
