@@ -2,23 +2,28 @@ import { defineConfig } from 'vitepress'
 
 import llmstxt from 'vitepress-plugin-llms'
 
-import { footnote } from '@mdit/plugin-footnote'
-
-import { head, nav, sidebar, socialLinks } from './configs'
+import {
+  head,
+  nav,
+  search,
+  sidebar,
+  socialLinks,
+  transformPageData
+} from './configs'
 
 export default defineConfig({
   // 站点名称
   title: '玄学宝典',
 
   // 站点语言
-  lang: 'zh-CN',
+  lang: 'zh-Hans',
 
   // 网站头部
   head,
   metaChunk: true,
   // 站点介绍
   description: '玄学宝典 - 中华传统五术书籍(山医命相卜)/传世经典著作',
-
+  transformPageData,
   //'force-dark'强制开启深色模式 false强制开启浅色模式
   // appearance: 'force-dark',
 
@@ -36,6 +41,9 @@ export default defineConfig({
 
   // vite配置
   vite: {
+    optimizeDeps: {
+      include: ['recaptcha-v3']
+    },
     plugins: [llmstxt({})]
   },
 
@@ -48,9 +56,6 @@ export default defineConfig({
       dangerLabel: '危险',
       infoLabel: '信息',
       detailsLabel: '详细信息'
-    },
-    config: (md) => {
-      md.use(footnote)
     }
   },
 
@@ -67,7 +72,7 @@ export default defineConfig({
   themeConfig: {
     // logo
     logo: {
-      src: 'https://i.theojs.cn/avatar.webp',
+      src: 'https://i.theojs.cn/logo/avatar-mini.webp',
       width: 24,
       height: 24,
       alt: 'Logo'
@@ -122,6 +127,9 @@ export default defineConfig({
 
     // 侧边栏
     sidebar,
+
+    //搜索
+    search: { provider: 'algolia', options: search },
 
     // 404
     notFound: {

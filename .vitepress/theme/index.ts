@@ -12,13 +12,11 @@ import {
   HomeFooter,
   HomeUnderline,
   ShareButton,
-  Twikoo,
-  googleAnalytics,
   umamiAnalytics
 } from '@theojs/lumen'
 import '@theojs/lumen/theme'
 
-import { Aside_Data, Footer_Data, Twikoo_Data } from '../data'
+import { Aside_Data, Footer_Data } from '../data'
 
 export default {
   extends: DefaultTheme,
@@ -26,17 +24,18 @@ export default {
     return h(DefaultTheme.Layout, null, {
       'aside-ads-before': () => h(DocAsideLogo, { Aside_Data }),
       'aside-outline-before': () => h(ShareButton),
-      'doc-after': () => h(Twikoo, { Twikoo_Data }),
       'home-hero-info-before': () => h(Announcement),
       'layout-bottom': () => h(HomeFooter, { Footer_Data })
     })
   },
   enhanceApp: ({ app }) => {
-    googleAnalytics({ id: 'G-5SHLV23EGQ' })
-    umamiAnalytics({
-      id: '05d0addd-9215-4b6d-b753-998173044185',
-      src: 'https://u.theojs.cn/script.js'
-    })
+    if ((import.meta as any).env.PROD) {
+      umamiAnalytics({
+        id: (import.meta as any).env.VITE_UMAMI_ID,
+        src: (import.meta as any).env.VITE_UMAMI_SRC,
+        domains: 'xx.theojs.cn'
+      })
+    }
     app.component('Home', HomeUnderline)
     app.component('Pill', DocPill)
     app.component('Box', DocBox)

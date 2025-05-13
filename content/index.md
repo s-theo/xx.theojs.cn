@@ -6,18 +6,26 @@ hero:
   name: 玄学宝典
   text: 山医命相卜
   tagline: 中华传统五术书籍传世经典著作
-  image: https://doc.theojs.cn/index/home.webp
+  image: 
+    src: https://doc.theojs.cn/index/home.webp
+    alt: home
+    loading: eager
+    fetchpriority: high
+    width: 320
+    height: 320
 
   prelink:
-    # content: '<span class="promo-text" style="display: inline-flex; align-items: center;"><img src="https://i.theojs.cn/logo/qyt.webp" style="height:0.65em; "/>IPLC纯专线内网传输线路 最高2.5Gbps速率!</span>'
-    title: '🎉 TNT 五一特惠来了-低至48折起！'
+    # content: '<span class="promo-text" style="display: inline-flex; align-items: center"><img src="https://i.theojs.cn/logo/qyt.webp" style="height:0.65em; "/>IPLC纯专线内网传输线路 最高2.5Gbps速率!</span>'
+    title: '<span class="promo-title"> 🎉 FlyingBird 520&618 活动继续启航！</span>'
     content: '
-    · 全套餐 <span class="promo-text"> 8折 </span>优惠码 <span class="promo-text"> MayDay80 </span></br>
-    · <span class="promo-text">3年付</span> 更可享受<span class="promo-text"> 4.8折优惠 </span>，非常划算哦</br>'
-    date: '2025年5月10号23点59分'
+    · <span class="promo-text"> 优惠码可重复使用5次!!! </span></br>
+    · 月付 <span class="promo-text"> 85折 </span>优惠码 <span class="promo-text"> fb2561885 </span></br>
+    · 年付 <span class="promo-text"> 64折 </span>优惠码 <span class="promo-text"> fb2561880 </span></br>
+    '
+    date: '2025年6月20号23点59分'
     # dateIcon: 'mdi:calendar-star'
     dateText: '活动截止日期'
-    link: https://s.theojs.cn/tnt
+    link: https://itheo.top/flyingbird
 
   actions:
     - theme: brand
@@ -31,10 +39,15 @@ hero:
     - theme: brand
       text: ❤️ 成为赞助商
       link: https://i.theojs.cn/sponsor.webp
+      rel: sponsored
 
     - theme: custom-alt
       text: Theo-Docs
       link: https://doc.theojs.cn
+
+    - theme: custom-alt-lumen
+      text: Lumen
+      link: https://lumen.theojs.cn
 
 features:
   - title: 山
