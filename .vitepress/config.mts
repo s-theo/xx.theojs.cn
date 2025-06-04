@@ -2,14 +2,7 @@ import { defineConfig } from 'vitepress'
 
 import llmstxt from 'vitepress-plugin-llms'
 
-import {
-  head,
-  nav,
-  search,
-  sidebar,
-  socialLinks,
-  transformPageData
-} from './configs'
+import { head, nav, search, sidebar, socialLinks, transformPageData } from './configs'
 
 export default defineConfig({
   // 站点名称
@@ -86,8 +79,7 @@ export default defineConfig({
 
     // GitHub编辑页面
     editLink: {
-      pattern:
-        'https://github.com/Theo-messi/xx.theojs.cn/edit/main/content/:path',
+      pattern: 'https://github.com/Theo-messi/xx.theojs.cn/edit/main/content/:path',
       text: '为此页提供修改建议'
     },
 

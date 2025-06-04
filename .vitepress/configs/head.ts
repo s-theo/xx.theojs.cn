@@ -19,10 +19,7 @@ export const head: HeadConfig[] = [
   ],
   ['link', { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }],
   ['link', { rel: 'shortcut icon', href: '/favicon.ico' }],
-  [
-    'link',
-    { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' }
-  ],
+  ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' }],
   ['meta', { name: 'apple-mobile-web-app-title', content: '玄学宝典' }],
   ['link', { rel: 'manifest', href: '/site.webmanifest' }],
   [
@@ -44,17 +41,11 @@ export const head: HeadConfig[] = [
       content: 'https://i.theojs.cn/logo/xx-og.webp'
     }
   ],
-  [
-    'meta',
-    { property: 'og:description', content: '中华传统五术书籍传世经典著作' }
-  ],
+  ['meta', { property: 'og:description', content: '中华传统五术书籍传世经典著作' }],
   ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
   ['meta', { name: 'twitter:site', content: '@TheoMessi_' }],
   ['meta', { name: 'twitter:title', content: '玄学宝典' }],
-  [
-    'meta',
-    { name: 'twitter:description', content: '中华传统五术书籍传世经典著作' }
-  ],
+  ['meta', { name: 'twitter:description', content: '中华传统五术书籍传世经典著作' }],
   [
     'meta',
     {
@@ -73,8 +64,7 @@ export const head: HeadConfig[] = [
     'meta',
     {
       name: 'robots',
-      content:
-        'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1'
+      content: 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1'
     }
   ]
 ]

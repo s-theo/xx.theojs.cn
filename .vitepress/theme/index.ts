@@ -11,7 +11,6 @@ import {
   DocPill,
   HomeFooter,
   HomeUnderline,
-  ShareButton,
   umamiAnalytics
 } from '@theojs/lumen'
 import '@theojs/lumen/theme'
@@ -23,7 +22,6 @@ export default {
   Layout() {
     return h(DefaultTheme.Layout, null, {
       'aside-ads-before': () => h(DocAsideLogo, { Aside_Data }),
-      'aside-outline-before': () => h(ShareButton),
       'home-hero-info-before': () => h(Announcement),
       'layout-bottom': () => h(HomeFooter, { Footer_Data })
     })

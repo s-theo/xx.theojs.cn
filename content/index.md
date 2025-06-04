@@ -61,7 +61,7 @@ features:
     # linkText: 查看
 
   - title: 命
-    link: 命/八字案例分析
+    link: 命/八字基础/生辰八字
     details: 包含了理解人类、改造人类命运，使其知天命而尽人力的凭术。
     # linkText: 查看
 
@@ -71,7 +71,7 @@ features:
     # linkText: 查看
 
   - title: 卜
-    link: 卜/毕法赋
+    link: 卜/毕法赋/毕法赋-上
     details: 包含了预测未来的祕术，其方法和现代的占卜不同。(山)和(卜)是为了(吉、凶)这两种命运。
     # linkText: 查看
 
