@@ -1,6 +1,5 @@
 plugins:
   - '@trivago/prettier-plugin-sort-imports'
-  - 'prettier-plugin-jsdoc'
   - 'prettier-plugin-packagejson'
   - 'prettier-plugin-sort-json'
 
@@ -9,15 +8,18 @@ semi: false
 singleQuote: true
 trailingComma: 'none'
 
-importOrderSeparation: true
+importOrderSeparation: false
 importOrderSortSpecifiers: true
 importOrder:
+  - '<THIRD_PARTY_MODULES>'
   - '^vitepress$'
   - '^vitepress([-/].*)?$'
   - '^vue$'
   - '^vite$'
   - '^@[a-zA-Z0-9-]+/(.*)$'
   - '^@/(.*)$'
+  - '^./.*$'
+  - '^../.*$'
   - '^[./]'
   - '^(.*)$'
 
