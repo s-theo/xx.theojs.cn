@@ -2,80 +2,26 @@ import type { AsideItem } from '@theojs/lumen'
 
 export const Aside_Data: AsideItem = [
   {
-    image: 'https://i.theojs.cn/logo/bee_logo.webp',
-    promo: '小蜜蜂 618购物狂欢',
-    info1: '全套餐推出8折优惠<span class="promo-text"> xmfxmf7 </span>',
-    info2: '3年付更可享受<span class="promo-text"> 4.8 </span>折',
-    link: 'https://itheo.top/bee',
-    rel: 'sponsored noreferrer'
-  },
-  // {
-  //   image: 'https://i.theojs.cn/logo/flyingbird.webp',
-  //   promo: 'FlyingBird 520&618 特惠',
-  //   info1: '月/季/半年付<span class="promo-text"> 85折: fb2561885 </span>',
-  //   info2: '年付以上<span class="promo-text"> 64折: fb2561880 </span>',
-  //   link: 'https://itheo.top/flyingbird',
-  //   rel: 'sponsored noreferrer'
-  // },
-  // {
-  //   image: 'https://i.theojs.cn/logo/totoro.webp',
-  //   promo: '龙猫云618大促-低至48折',
-  //   info1: '月/季/半年付<span class="promo-text"> 85折: spring85 </span>',
-  //   info2: '年付以上<span class="promo-text"> 48折: spring80 </span>',
-  //   link: 'https://itheo.top/totoro',
-  //   rel: 'sponsored noreferrer'
-  // },
-  // {
-  //   image: 'https://i.theojs.cn/logo/qyt.webp',
-  //   promo: '青云梯 618大促活动开启',
-  //   info1: '月/季/半年付 <span class="promo-text"> 85折: wuyi85 </span>',
-  //   info2: '年付以上<span class="promo-text"> 64折: wuyi80 </span>',
-  //   link: 'https://itheo.top/qyt',
-  //   rel: 'sponsored noreferrer'
-  // },
-  // {
-  //   image: { src: 'https://i.theojs.cn/logo/galaxy_transparent_square.webp', crop: true },
-  //   promo: 'Galaxy 银河云 618购物节',
-  //   info1: '月/季/半年付 <span class="promo-text"> 85折: wuyi85 </span>',
-  //   info2: '年付以上 <span class="promo-text"> 64折: wuyi80 </span>',
-  //   link: 'https://itheo.top/yhy',
-  //   rel: 'sponsored noreferrer'
-  // },
-  // {
-  //   image: { src: 'https://i.theojs.cn/docs/TNT.webp', crop: true },
-  //   promo: 'TNT Cloud 618购物狂欢!',
-  //   info1: '全场 <span class="promo-text"> 8折: Crazy618 </span>',
-  //   link: 'https://itheo.top/tnt',
-  //   rel: 'sponsored noreferrer'
-  // },
-  {
-    image: 'https://i.theojs.cn/logo/flyingbird.webp',
-    promo: 'FlyingBird',
-    link: 'https://itheo.top/flyingbird',
+    icon: 'twemoji:airplane',
+    promo: '机场推荐评测',
+    info1: '<span class="promo-text">低价优质  翻墙服务</span>',
+    info2: '<span class="promo-text">严选优质  稳定节点</span>',
+    link: 'https://doc.theojs.cn/serve/airport/summary',
     rel: 'sponsored noreferrer'
   },
   {
-    image: 'https://i.theojs.cn/logo/totoro.webp',
-    promo: 'Totoro Cloud - 龙猫云',
-    link: 'https://itheo.top/totoro',
-    rel: 'sponsored noreferrer'
+    icon: { icon: 'cib:netflix', color: '#E50914' },
+    promo: '流媒体帐号合租',
+    info1: '<span class="promo-text">合租账号  低价共享</span>',
+    info2: '<span class="promo-text">共享车位  轻松上号</span>',
+    link: 'https://doc.theojs.cn/serve/sharing/account-sharing-guide'
   },
   {
-    image: 'https://i.theojs.cn/logo/qyt.webp',
-    promo: '青云梯',
-    link: 'https://itheo.top/qyt',
-    rel: 'sponsored noreferrer'
-  },
-  {
-    image: { src: 'https://i.theojs.cn/logo/galaxy_transparent_square.webp', crop: true },
-    promo: '银河云',
-    link: 'https://itheo.top/yhy',
-    rel: 'sponsored noreferrer'
-  },
-  {
-    image: { src: 'https://i.theojs.cn/docs/TNT.webp', crop: true },
-    promo: 'TNT Cloud',
-    link: 'https://itheo.top/tnt',
+    image: 'https://i.theojs.cn/logo/hero-sms.svg',
+    promo: 'Hero-SMS 短信接码',
+    info1: '秒开 <span class="promo-text">虚拟号码</span> 注册无障碍',
+    info2: '覆盖 <span class="promo-text">200+国家</span> 轻松可用',
+    link: 'https://itheo.top/sms',
     rel: 'sponsored noreferrer'
   },
   {
@@ -91,19 +37,5 @@ export const Aside_Data: AsideItem = [
     hide1: '流媒体观影',
     hide2: '一站式服务',
     link: 'https://doc.theojs.cn/'
-  },
-  {
-    icon: { icon: 'cbi:netflix', color: '#E50914' },
-    name: '流媒体帐号合租',
-    hide1: '流媒体账号合租',
-    hide2: '共享车位',
-    link: 'https://doc.theojs.cn/serve/sharing/Account-sharing-guide'
-  },
-  {
-    icon: 'eos-icons:configuration-file',
-    name: '常用配置 - dotfiles',
-    hide1: 'zshrc、系统优化一键脚本',
-    hide2: 'Clash/Loon/QX... 配置',
-    link: 'https://github.com/Theo-Messi/dotfiles'
   }
 ]
