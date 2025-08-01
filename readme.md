@@ -6,9 +6,9 @@
 
 欢迎您为本站贡献内容，无论是新增书籍资料，还是纠正文献中的错误，您可通过以下方式参与：
 
-- [提交 Issue](https://github.com/Theo-messi/xx.theojs.cn/issues/new)  
+- [提交 Issue](https://github.com/s-theo/xx.theojs.cn/issues/new)  
    欢迎报告 bug 或提出功能请求，帮助我改进本站。
-- [Fork & 提交 PR](https://github.com/Theo-messi/xx.theojs.cn/fork)  
+- [Fork & 提交 PR](https://github.com/s-theo/xx.theojs.cn/fork)  
   欢迎复制仓库并发起 Pull Request，贡献书籍资料或纠正文献中的错误。
 - [通过邮件提交建议](mailto:fanxiaobin422@gmail.com)  
   如不便使用 GitHub，您可通过邮件提交建议与我联系。

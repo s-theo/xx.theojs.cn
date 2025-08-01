@@ -14,13 +14,13 @@ hero:
     height: 320
 
   Notice:
-    title: '<iconify-icon icon="streamline-emojis:wrapped-gift-2" ></iconify-icon> <span class="promo-title"> 小蜜蜂 618购物狂欢!!! 最低三年48折</span>'
+    title: '<span class="promo-title">星岛梦开服全场 64 折!</span>'
     desc: |
-      · 全套餐推出8折优惠 <span class="promo-text">xmfxmf7</span>
-      · 3年付更可享受 <span class="promo-text">4.8</span>折优惠
-    date: '7月31号23点59分'
+      · 全场套餐 <span class="promo-text"> 64 折: XDM666 </span>
+      · 优惠券可叠加套餐本身优惠，享受折上折。
+    date: '2025年12月27日23点59分'
     dateText: '活动截止至'
-    link: https://itheo.top/bee
+    link: https://itheo.top/xdm
     rel: sponsored noreferrer
 
   actions:
@@ -31,6 +31,10 @@ hero:
     - theme: alt
       text: 提交书籍与纠错
       link: /提交书籍与纠错
+
+    - theme: alt
+      text: 专线推荐
+      link: https://doc.theojs.cn/serve/airport/qingyunti
 
     - theme: alt author
       text: Theo-Docs
