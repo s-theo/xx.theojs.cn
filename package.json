@@ -36,10 +36,10 @@
     "prettier-plugin-packagejson": "^2.5.19",
     "prettier-plugin-sort-json": "4.1.1",
     "simple-git-hooks": "^2.13.1",
-    "vite": "npm:rolldown-vite@^7.1.4",
+    "vite": "npm:rolldown-vite@^7.1.5",
     "vitepress": "2.0.0-alpha.12",
     "vitepress-plugin-llms": "^1.7.3",
-    "vue": "^3.5.19"
+    "vue": "^3.5.20"
   },
   "packageManager": "pnpm@10.15.0"
 }
