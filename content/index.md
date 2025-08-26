@@ -14,13 +14,13 @@ hero:
     height: 320
 
   Notice:
-    title: '<span class="promo-title">青云梯 优惠码大放送!</span>'
+    title: '<span class="promo-title">青云梯国庆·中秋限时优惠活动!</span>'
     desc: |
-      · 85折<span class="promo-text"> 优惠码: qyt85 </span>
-      · 8折<span class="promo-text"> 优惠码: qyt80 </span>
-      · 配合优惠码折上折，最高可达<span class="promo-text">48折</span>
-    # date: '7月31号23点59分'
-    # dateText: '活动截止至'
+      · 全场套餐 <span class="promo-text"> 8折: 10180 </span>
+      · 每位用户不限使用次数。
+      · 优惠券可叠加套餐本身优惠，享受折上折。
+    date: '2025年11月1日23点59分'
+    dateText: '活动截止至'
     link: https://itheo.top/qyt
     rel: sponsored noreferrer
 
