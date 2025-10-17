@@ -9,22 +9,22 @@ export const Aside_Data: AsideItem = [
     link: 'https://itheo.top/sms',
     rel: 'sponsored noreferrer'
   },
-  {
-    image: 'https://i.theojs.cn/logo/flyingbird.webp',
-    promo: 'FlyingBird 国庆中秋特惠',
-    info1: '月/季/半年<span class="promo-text"> 85折: fb25100185 </span>',
-    info2: '年付以上<span class="promo-text"> 64折: fb25100180 </span>',
-    link: 'https://itheo.top/flyingbird',
-    rel: 'sponsored noreferrer'
-  },
-  {
-    image: 'https://i.theojs.cn/logo/totoro.webp',
-    promo: '龙猫云 国庆中秋特惠',
-    info1: '月/季/半年付<span class="promo-text"> 85折: tot85 </span>',
-    info2: '年付以上<span class="promo-text"> 48折: to80 </span>',
-    link: 'https://itheo.top/totoro',
-    rel: 'sponsored noreferrer'
-  },
+  // {
+  //   image: 'https://i.theojs.cn/logo/flyingbird.webp',
+  //   promo: 'FlyingBird 国庆中秋特惠',
+  //   info1: '月/季/半年<span class="promo-text"> 85折: fb25100185 </span>',
+  //   info2: '年付以上<span class="promo-text"> 64折: fb25100180 </span>',
+  //   link: 'https://itheo.top/flyingbird',
+  //   rel: 'sponsored noreferrer'
+  // },
+  // {
+  //   image: 'https://i.theojs.cn/logo/totoro.webp',
+  //   promo: '龙猫云 国庆中秋特惠',
+  //   info1: '月/季/半年付<span class="promo-text"> 85折: tot85 </span>',
+  //   info2: '年付以上<span class="promo-text"> 48折: to80 </span>',
+  //   link: 'https://itheo.top/totoro',
+  //   rel: 'sponsored noreferrer'
+  // },
   {
     image: 'https://i.theojs.cn/logo/qyt.webp',
     promo: '青云梯 国庆中秋特惠',
@@ -63,6 +63,13 @@ export const Aside_Data: AsideItem = [
     link: 'https://itheo.top/okanc',
     rel: 'sponsored noreferrer'
   },
+  {
+    image: 'https://i.theojs.cn/logo/sds_logo.webp',
+    promo: '闪电鼠开服全场 8 折',
+    info1: '全场套餐 <span class="promo-text"> 8折: OPEN20</span>',
+    link: 'https://itheo.top/sds',
+    rel: 'sponsored noreferrer'
+  },
   // {
   //   image: 'https://i.theojs.cn/logo/qyt.webp',
   //   promo: '青云梯',
@@ -75,18 +82,18 @@ export const Aside_Data: AsideItem = [
   //   link: 'https://itheo.top/yhy',
   //   rel: 'sponsored noreferrer'
   // },
-  // {
-  //   image: 'https://i.theojs.cn/logo/flyingbird.webp',
-  //   promo: 'FlyingBird',
-  //   link: 'https://itheo.top/flyingbird',
-  //   rel: 'sponsored noreferrer'
-  // },
-  // {
-  //   image: 'https://i.theojs.cn/logo/totoro.webp',
-  //   promo: 'Totoro Cloud - 龙猫云',
-  //   link: 'https://itheo.top/totoro',
-  //   rel: 'sponsored noreferrer'
-  // },
+  {
+    image: 'https://i.theojs.cn/logo/flyingbird.webp',
+    promo: 'FlyingBird',
+    link: 'https://itheo.top/flyingbird',
+    rel: 'sponsored noreferrer'
+  },
+  {
+    image: 'https://i.theojs.cn/logo/totoro.webp',
+    promo: 'Totoro Cloud - 龙猫云',
+    link: 'https://itheo.top/totoro',
+    rel: 'sponsored noreferrer'
+  },
   // {
   //   image: 'https://i.theojs.cn/logo/bee_logo.webp',
   //   promo: '小蜜蜂',
@@ -97,6 +104,12 @@ export const Aside_Data: AsideItem = [
   //   image: { src: 'https://i.theojs.cn/docs/TNT.webp', crop: true },
   //   promo: 'TNT Cloud',
   //   link: 'https://itheo.top/tnt',
+  //   rel: 'sponsored noreferrer'
+  // },
+  // {
+  //   image: { src: 'https://i.theojs.cn/logo/sds_logo.webp' },
+  //   promo: '闪电鼠',
+  //   link: 'https://itheo.top/sds',
   //   rel: 'sponsored noreferrer'
   // },
   {
