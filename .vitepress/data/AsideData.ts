@@ -2,14 +2,6 @@ import type { AsideItem } from '@theojs/lumen'
 
 export const Aside_Data: AsideItem = [
   // {
-  //   image: 'https://i.theojs.cn/logo/flyingbird.webp',
-  //   promo: 'FlyingBird 双十一特惠',
-  //   info1: '月/季/半年<span class="promo-text"> 85折: fb25111185 </span>',
-  //   info2: '年付以上<span class="promo-text"> 64折: fb25111180 </span>',
-  //   link: 'https://itheo.top/flyingbird',
-  //   rel: 'sponsored noreferrer'
-  // },
-  // {
   //   image: 'https://i.theojs.cn/logo/totoro.webp',
   //   promo: '龙猫云 双十一特惠',
   //   info1: '月/季/半年付<span class="promo-text"> 85折: lm1185 </span>',
@@ -23,6 +15,22 @@ export const Aside_Data: AsideItem = [
     info1: '全场套餐 <span class="promo-text"> 85折: qyt85 </span>',
     info2: '3年以上<span class="promo-text"> 48折: qyt80 </span>',
     link: 'https://itheo.top/qyt',
+    rel: 'sponsored noreferrer'
+  },
+  {
+    image: 'https://i.theojs.cn/logo/hyperlink_logo.webp',
+    promo: 'hyperlink - 极连云专属特惠',
+    info1: '全场套餐 <span class="promo-text"> 8折: JLY888 </span>',
+    info2: '3年付更可享受 <span class="promo-text"> 48折 </span>',
+    link: 'https://itheo.top/hyperlink',
+    rel: 'sponsored noreferrer'
+  },
+  {
+    image: 'https://i.theojs.cn/logo/flyingbird.webp',
+    promo: 'FlyingBird 专属优惠',
+    info1: '专属优惠码<span class="promo-text"> 9折: theo </span>',
+    info2: '年付以上<span class="promo-text"> 64折: year85 </span>',
+    link: 'https://itheo.top/flyingbird',
     rel: 'sponsored noreferrer'
   },
   // {
@@ -86,6 +94,12 @@ export const Aside_Data: AsideItem = [
     link: 'https://itheo.top/totoro',
     rel: 'sponsored noreferrer'
   },
+  // {
+  //   image: 'https://i.theojs.cn/logo/hyperlink_logo.webp',
+  //   promo: 'hyperlink - 极连云',
+  //   link: 'https://itheo.top/hyperlink',
+  //   rel: 'sponsored noreferrer'
+  // },
   // {
   //   image: 'https://i.theojs.cn/logo/bee_logo.webp',
   //   promo: '小蜜蜂',
