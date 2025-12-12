@@ -5,16 +5,6 @@ export const Footer_Data: FooterData = {
   author: { name: 'Theo', link: 'https://github.com/s-theo' },
   group: [
     {
-      icon: 'mdi:github',
-      title: 'GitHub Source',
-      links: [
-        { name: 'Theo-Docs', link: 'https://github.com/s-theo/Theo-Docs' },
-        { name: '玄学宝典', link: 'https://github.com/s-theo/xx.theojs.cn' },
-        { name: '常用配置文件', link: 'https://github.com/s-theo/dotfiles' },
-        { name: 'Lumen', link: 'https://github.com/s-theo/lumen' }
-      ]
-    },
-    {
       icon: 'heroicons:globe-alt-solid',
       title: '优质线路',
       links: [
@@ -23,6 +13,13 @@ export const Footer_Data: FooterData = {
         { name: 'Galaxy - 银河云', link: 'https://itheo.top/yhy', rel: 'sponsored noreferrer' },
         { name: 'TNT Cloud', link: 'https://itheo.top/tnt', rel: 'sponsored noreferrer' },
         { name: 'FlyingBird - 飞鸟机场', link: 'https://itheo.top/flyingbird', rel: 'sponsored noreferrer' },
+        { name: 'FatCat Cloud - 肥猫云', link: 'https://itheo.top/fatcat', rel: 'sponsored noreferrer' }
+      ]
+    },
+    {
+      icon: 'heroicons:globe-alt-solid',
+      title: '优质线路',
+      links: [
         { name: 'Totoro - 龙猫云', link: 'https://itheo.top/totoro', rel: 'sponsored noreferrer' },
         { name: '小蜜蜂', link: 'https://itheo.top/bee', rel: 'sponsored noreferrer' },
         { name: 'OKANC', link: 'https://itheo.top/okanc', rel: 'sponsored noreferrer' },
