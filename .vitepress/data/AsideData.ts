@@ -9,11 +9,18 @@ export const Aside_Data: AsideItem = [
   //   link: 'https://itheo.top/totoro',
   //   rel: 'sponsored noreferrer'
   // },
+  // {
+  //   image: 'https://i.theojs.cn/logo/qyt.webp',
+  //   promo: '青云梯 专属特惠',
+  //   info1: '全场套餐 <span class="promo-text"> 85折: qyt85 </span>',
+  //   info2: '3年以上<span class="promo-text"> 48折: qyt80 </span>',
+  //   link: 'https://itheo.top/qyt',
+  //   rel: 'sponsored noreferrer'
+  // },
   {
     image: 'https://i.theojs.cn/logo/qyt.webp',
-    promo: '青云梯 专属特惠',
-    info1: '全场套餐 <span class="promo-text"> 85折: qyt85 </span>',
-    info2: '3年以上<span class="promo-text"> 48折: qyt80 </span>',
+    promo: '青云梯 双旦特惠',
+    info1: '全场套餐 <span class="promo-text"> 8折: 0080 </span>',
     link: 'https://itheo.top/qyt',
     rel: 'sponsored noreferrer'
   },
@@ -60,6 +67,20 @@ export const Aside_Data: AsideItem = [
     promo: 'OKNAC 78 折特惠',
     info1: '全场套餐 <span class="promo-text"> 78折: 1212</span>',
     link: 'https://itheo.top/okanc',
+    rel: 'sponsored noreferrer'
+  },
+  {
+    image: 'https://i.theojs.cn/logo/naiyun_logo.webp',
+    promo: '奈云 78 折特惠',
+    info1: '全场套餐 <span class="promo-text"> 78折: 1212</span>',
+    link: 'https://itheo.top/naiyun',
+    rel: 'sponsored noreferrer'
+  },
+  {
+    image: 'https://i.theojs.cn/logo/meile.webp',
+    promo: '美乐云 75 折特惠',
+    info1: '全场套餐 <span class="promo-text"> 75折: ML75</span>',
+    link: 'https://itheo.top/meile',
     rel: 'sponsored noreferrer'
   },
   {
