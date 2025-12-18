@@ -35,7 +35,7 @@ export const Aside_Data: AsideItem = [
   {
     image: 'https://i.theojs.cn/logo/lightspeed_logo.webp',
     promo: 'lightspeed - 光速云特惠',
-    info1: '全场套餐 <span class="promo-text"> 8折: ok88</span>',
+    info1: '全场套餐 <span class="promo-text"> 75折: 7575</span>',
     link: 'https://itheo.top/lightspeed',
     rel: 'sponsored noreferrer'
   },
