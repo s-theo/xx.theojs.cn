@@ -14,13 +14,13 @@ hero:
     height: 320
 
   Notice:
-    title: '<span class="promo-title">星岛梦开服全场 64 折!</span>'
+    title: '<span class="promo-title">青云梯 双旦特惠!</span>'
     desc: |
-      · 全场套餐 <span class="promo-text"> 64 折: XDM666 </span>
-      · 优惠券可叠加套餐本身优惠，享受折上折。
-    date: '2025年12月27日23点59分'
+      · 全场套餐 <span class="promo-text"> 8折: 0080 </span>
+      · 3年付更可享受 <span class="promo-text"> 48折 </span>
+    date: '2026年1月30日23点59分'
     dateText: '活动截止至'
-    link: https://itheo.top/xdm
+    link: https://itheo.top/qyt
     rel: sponsored noreferrer
 
   actions:

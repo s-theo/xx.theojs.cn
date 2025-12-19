@@ -21,6 +21,7 @@ export const Aside_Data: AsideItem = [
     image: 'https://i.theojs.cn/logo/qyt.webp',
     promo: '青云梯 双旦特惠',
     info1: '全场套餐 <span class="promo-text"> 8折: 0080 </span>',
+    info2: '3年付更可享受 <span class="promo-text"> 48折 </span>',
     link: 'https://itheo.top/qyt',
     rel: 'sponsored noreferrer'
   },
@@ -39,19 +40,19 @@ export const Aside_Data: AsideItem = [
     link: 'https://itheo.top/lightspeed',
     rel: 'sponsored noreferrer'
   },
-  // {
-  //   image: { src: 'https://i.theojs.cn/logo/galaxy_transparent_square.webp', crop: true },
-  //   promo: '银河云 双十一特惠',
-  //   info1: '全场套餐 <span class="promo-text"> 8折: 1180 </span>',
-  //   // info2: '3年以上<span class="promo-text"> 48折: qyt80 </span>',
-  //   link: 'https://itheo.top/yhy',
-  //   rel: 'sponsored noreferrer'
-  // },
+  {
+    image: { src: 'https://i.theojs.cn/logo/galaxy_transparent_square.webp', crop: true },
+    promo: '银河云 双旦特惠',
+    info1: '全场套餐 <span class="promo-text"> 8折: 0080 </span>',
+    info2: '3年付更可享受 <span class="promo-text"> 48折 </span>',
+    link: 'https://itheo.top/yhy',
+    rel: 'sponsored noreferrer'
+  },
   {
     image: { src: 'https://i.theojs.cn/logo/TNT.webp', crop: true },
-    promo: 'TNT 专属特惠',
-    info1: '全场套餐 <span class="promo-text"> 8折: TNT80</span>',
-    info2: '全场85折 <span class="promo-text">折扣码: TNT85</span>',
+    promo: 'TNT 双旦特惠',
+    info1: '全场套餐 <span class="promo-text"> 8折: Merry80</span>',
+    // info2: '全场85折 <span class="promo-text">折扣码: TNT85</span>',
     link: 'https://itheo.top/tnt',
     rel: 'sponsored noreferrer'
   },
@@ -117,12 +118,12 @@ export const Aside_Data: AsideItem = [
   //   link: 'https://itheo.top/hyperlink',
   //   rel: 'sponsored noreferrer'
   // },
-  {
-    image: { src: 'https://i.theojs.cn/logo/galaxy_transparent_square.webp', crop: true },
-    promo: '银河云',
-    link: 'https://itheo.top/yhy',
-    rel: 'sponsored noreferrer'
-  },
+  // {
+  //   image: { src: 'https://i.theojs.cn/logo/galaxy_transparent_square.webp', crop: true },
+  //   promo: '银河云',
+  //   link: 'https://itheo.top/yhy',
+  //   rel: 'sponsored noreferrer'
+  // },
   // {
   //   image: 'https://i.theojs.cn/logo/flyingbird.webp',
   //   promo: 'FlyingBird',
