@@ -1,4 +1,5 @@
 /// <reference types="vite/client" />
+import type { EnhanceAppContext } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import { h } from 'vue'
 import { Aside, Footer, Links, Notice, Underline, umamiAnalytics } from '@theojs/lumen'
@@ -16,7 +17,7 @@ export default {
     })
   },
 
-  enhanceApp: ({ app }) => {
+  enhanceApp: ({ app }: EnhanceAppContext) => {
     umamiAnalytics({
       id: import.meta.env.VITE_UMAMI_ID,
       src: import.meta.env.VITE_UMAMI_SRC,
