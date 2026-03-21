@@ -25,7 +25,7 @@
     "@commitlint/cli": "^20.5.0",
     "@commitlint/config-conventional": "^20.5.0",
     "@commitlint/types": "^20.5.0",
-    "@theojs/lumen": "^6.4.5",
+    "@theojs/lumen": "^6.4.6",
     "@trivago/prettier-plugin-sort-imports": "^6.0.2",
     "commitizen": "^4.3.1",
     "cz-vinyl": "^2.5.4",
