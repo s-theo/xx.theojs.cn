@@ -37,7 +37,7 @@ export const search: DefaultTheme.AlgoliaSearchOptions = {
           },
           newConversation: {
             newConversationTitle: '我今天能帮你什么？',
-            newConversationDescription: '我会搜索你的书籍，快速帮你找到设置指南、功能细节和故障排除提示。'
+            newConversationDescription: '我会搜索站内书籍，快速帮你找到原文段落、章节来源和术语线索。'
           },
           footer: {
             selectText: '选择',
@@ -90,7 +90,6 @@ export const search: DefaultTheme.AlgoliaSearchOptions = {
             afterToolCallText: '已搜索',
             stoppedStreamingText: '你已停止此回复',
             errorTitleText: '聊天错误',
-            threadDepthExceededMessage: '为保持回答准确，此对话已关闭。',
             startNewConversationButtonText: '开始新的对话'
           }
         }
@@ -137,7 +136,7 @@ export const search: DefaultTheme.AlgoliaSearchOptions = {
               },
               newConversationScreen: {
                 titleText: '我今天能帮你什么？',
-                introductionText: '我会搜索你的书籍，快速帮你找到设置指南、功能细节和故障排除提示。'
+                introductionText: '我会搜索站内书籍，快速帮你找到原文段落、章节来源和术语线索。'
               },
               logo: {
                 poweredByText: '提供支持者：'
