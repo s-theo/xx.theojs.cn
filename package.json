@@ -19,10 +19,10 @@
     "@theojs/lumen": "^6.4.7",
     "lint-staged": "^17.0.8",
     "simple-git-hooks": "^2.13.1",
-    "vite": "^8.1.3",
+    "vite": "^8.1.4",
     "vitepress": "2.0.0-alpha.18",
     "vitepress-plugin-llms": "^1.13.2",
     "vue": "^3.5.39"
   },
-  "packageManager": "pnpm@11.10.0"
+  "packageManager": "pnpm@11.12.0"
 }
