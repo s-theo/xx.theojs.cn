@@ -1,9 +1,9 @@
 {
   "scripts": {
     "build": "vitepress build",
+    "check": "biome check .",
     "dev": "vitepress dev",
     "format": "biome check --write .",
-    "format:check": "biome check .",
     "iall": "pnpm -r install",
     "preview": "vitepress preview",
     "upall": "pnpm -r update --latest"

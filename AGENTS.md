@@ -8,14 +8,19 @@
 This is the Chinese VitePress site at `https://xx.theojs.cn`. Its Markdown collection covers the five
 traditional arts, spiritual pets, and related classics.
 
-- Use Node.js `>=22.22.1`; the current `lint-staged@17.0.8` dependency requires this minimum.
-- Use the `pnpm@11.14.0` version declared in `package.json#packageManager` and the root `pnpm-lock.yaml`.
-- The main stack is VitePress 2 alpha, Vite 8, Vue 3, `@theojs/lumen`, and `vitepress-plugin-llms`.
+- Use a Node.js release that satisfies the current toolchain's `engines` metadata. Check the active boundary in
+  `package.json`, `pnpm-lock.yaml`, and installed package metadata before installing or running hooks; do not
+  preserve dependency-derived minimums here.
+- Use the pnpm release declared in `package.json#packageManager`; `pnpm-lock.yaml` and `pnpm-workspace.yaml` are
+  authoritative for dependency resolution and workspace behavior.
+- The main stack is VitePress, Vite, Vue, `@theojs/lumen`, and `vitepress-plugin-llms`. Read exact dependency
+  versions from `package.json` and `pnpm-lock.yaml`, and schema or tool versions from the owning config or tool
+  metadata.
 - Production currently runs on Cloudflare Pages project `xx-theojs-cn`, built from `main` with `pnpm build` and
   `.vitepress/dist`. Verify the live platform state before changing deployment assumptions.
-- Biome is the only formatter and import organizer. Its linter is disabled; do not introduce Prettier.
-- There are no `test`, `lint`, `typecheck`, or browser-test scripts. A VitePress build is the main integration
-  check.
+- Biome provides the formatter, recommended linter, and import organizer; do not introduce Prettier.
+- There are no dedicated `test`, `typecheck`, or browser-test scripts. `pnpm run check` is the canonical
+  code-quality check, and a VitePress build is the main integration check.
 
 ## Before making changes
 
@@ -37,8 +42,8 @@ traditional arts, spiritual pets, and related classics.
 - `.vitepress/data/` and `.vitepress/theme/index.ts` contain Lumen Aside/Footer data, layout slots, global
   components, and Umami initialization.
 - `package.json`, `pnpm-lock.yaml`, `pnpm-workspace.yaml`, and `biome.json` define scripts, dependencies, pnpm
-  behavior, and formatting. Workspace settings deliberately disable peer auto-installation and pnpm 11's
-  default release-age delay, while allowing only the `simple-git-hooks` dependency build.
+  behavior, and formatting. Workspace settings deliberately disable peer auto-installation and the release-age
+  delay, while allowing only the `simple-git-hooks` dependency build.
 - `renovate.json` only extends `github>s-theo/dotfiles`; keep dependency policy in the shared preset.
 
 ## Commands
@@ -48,11 +53,11 @@ pnpm install --frozen-lockfile
 pnpm run dev
 pnpm run build
 pnpm run preview
-pnpm run format:check
+pnpm run check
 pnpm run format
 ```
 
-`format` and the pre-commit lint-staged hook rewrite files; use `format:check` for a check-only run. Installation
+`format` and the pre-commit lint-staged hook rewrite files; use `check` for a check-only run. Installation
 writes `node_modules` and may run allow-listed scripts, builds write `.vitepress/dist`, and dev/preview start
 long-running servers. `pnpm run upall` changes dependency files. Do not edit the lockfile manually;
 `pnpm-workspace.yaml` controls which dependencies may run install or build scripts.
@@ -79,8 +84,8 @@ long-running servers. `pnpm run upall` changes dependency files. Do not edit the
 - Sponsored links exist on the home page and in `.vitepress/data/`. Preserve `rel: 'sponsored noreferrer'` on
   existing sponsored links and add it to new sponsored links.
 - The theme extends `DefaultTheme` with Lumen slots and global components. Register new Markdown components in
-  the theme entry. Do not remove Lumen styles, the `iconify-icon` custom-element option, or the rolldown-vite
-  type-compatibility comment above the llms plugin without rebuilding.
+  the theme entry. Do not remove Lumen styles, the `iconify-icon` custom-element option, or the llms plugin
+  without rebuilding.
 - Theme code participates in SSR; do not access `window` or `document` at module scope. `VITE_UMAMI_ID` and
   `VITE_UMAMI_SRC` are bundled into client code, so never use them for secrets or commit deployment values.
 - `.vitepress/dist`, `.vitepress/cache`, and `node_modules` are generated or dependency directories. Do not edit
@@ -91,9 +96,9 @@ long-running servers. `pnpm run upall` changes dependency files. Do not edit the
 | Change | Minimum validation |
 | --- | --- |
 | `AGENTS.md` only | `git diff --check`; `git diff --name-only`; `git status --short`. No build is needed for instruction-only changes. |
-| Content, nav/sidebar, SEO, theme, Lumen data, VitePress configuration, or static assets | `pnpm run format:check`; `pnpm run build`; `git diff --check`. |
+| Content, nav/sidebar, SEO, theme, Lumen data, VitePress configuration, or static assets | `pnpm run check`; `pnpm run build`; `git diff --check`. |
 | Nav/sidebar changes or page additions, moves, or renames | Run the previous row, then compare every route with `content/`, `sitemap.xml`, `llms.txt`, `llms-full.txt`, and per-page Markdown output; scan all internal targets and anchors. |
-| `package.json`, `pnpm-lock.yaml`, or pnpm configuration | Update with the declared pnpm version; run `pnpm install --frozen-lockfile`, `pnpm run format:check`, `pnpm run build`, and `git diff --check`. |
+| `package.json`, `pnpm-lock.yaml`, or pnpm configuration | Update with the declared pnpm version; run `pnpm install --frozen-lockfile`, `pnpm run check`, `pnpm run build`, and `git diff --check`. |
 | Browser-side interaction | Build, then run `pnpm run preview` (or `pnpm run dev` during development) and verify the behavior manually. |
 
 Before handoff, inspect staged, unstaged, and untracked files and confirm that only authorized files changed.
