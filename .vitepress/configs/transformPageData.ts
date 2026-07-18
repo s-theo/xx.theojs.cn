@@ -1,4 +1,4 @@
-import type { UserConfig } from 'vitepress'
+import type { HeadConfig, UserConfig } from 'vitepress'
 
 const baseUrl = 'https://xx.theojs.cn'
 const imgUrl = 'https://i.theojs.cn/logo/avatar-mini.webp'
@@ -7,6 +7,7 @@ const defaultOgImage = 'https://i.theojs.cn/logo/xx-og.webp'
 export const transformPageData: UserConfig['transformPageData'] = (pageData) => {
   // head is an array
   pageData.frontmatter.head ??= []
+  const pageHead: HeadConfig[] = pageData.frontmatter.head
 
   // canonical URL
   const DynamicUrl = `${baseUrl}/${pageData.relativePath}`.replace(/index\.md$/, '').replace(/\.md$/, '')
@@ -21,9 +22,7 @@ export const transformPageData: UserConfig['transformPageData'] = (pageData) => 
   const modified_time = pageData.lastUpdated ? new Date(pageData.lastUpdated).toISOString() : new Date().toISOString()
 
   // og:image
-  const ogImageEntry = pageData.frontmatter.head.find(
-    (item: any) => item[0] === 'meta' && item[1]?.property === 'og:image'
-  )
+  const ogImageEntry = pageHead.find((item) => item[0] === 'meta' && item[1]?.property === 'og:image')
   const ogImage = ogImageEntry?.[1]?.content || defaultOgImage
 
   // json-ld
@@ -32,7 +31,7 @@ export const transformPageData: UserConfig['transformPageData'] = (pageData) => 
     ? {
         '@context': 'https://schema.org',
         '@type': 'WebSite',
-        url: baseUrl + '/',
+        url: `${baseUrl}/`,
         inLanguage: 'zh-Hans',
         author: { '@type': 'Person', name: 'Theo', url: baseUrl },
         publisher: {
@@ -61,7 +60,7 @@ export const transformPageData: UserConfig['transformPageData'] = (pageData) => 
       }
 
   // add head
-  pageData.frontmatter.head.push(
+  pageHead.push(
     ['link', { rel: 'canonical', href: DynamicUrl }],
     ['meta', { property: 'og:title', content: title }],
     ['meta', { property: 'og:url', content: DynamicUrl }],

@@ -36,7 +36,6 @@ export default defineConfig({
 
   // vite配置
   vite: {
-    // @ts-ignore: 使用 rolldown-vite 时类型不兼容 vite，但运行正常
     plugins: [llmstxt({})]
   },
 
