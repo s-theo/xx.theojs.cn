@@ -6,11 +6,13 @@
 ## Project and toolchain
 
 This is the Chinese VitePress site at `https://xx.theojs.cn`. Its Markdown collection covers the five
-traditional arts (山、医、命、相、卜), spiritual pets, and related classics.
+traditional arts, spiritual pets, and related classics.
 
 - Use Node.js `>=22.22.1`; the current `lint-staged@17.0.8` dependency requires this minimum.
 - Use the `pnpm@11.14.0` version declared in `package.json#packageManager` and the root `pnpm-lock.yaml`.
 - The main stack is VitePress 2 alpha, Vite 8, Vue 3, `@theojs/lumen`, and `vitepress-plugin-llms`.
+- Production currently runs on Cloudflare Pages project `xx-theojs-cn`, built from `main` with `pnpm build` and
+  `.vitepress/dist`. Verify the live platform state before changing deployment assumptions.
 - Biome is the only formatter and import organizer. Its linter is disabled; do not introduce Prettier.
 - There are no `test`, `lint`, `typecheck`, or browser-test scripts. A VitePress build is the main integration
   check.
@@ -35,7 +37,8 @@ traditional arts (山、医、命、相、卜), spiritual pets, and related clas
 - `.vitepress/data/` and `.vitepress/theme/index.ts` contain Lumen Aside/Footer data, layout slots, global
   components, and Umami initialization.
 - `package.json`, `pnpm-lock.yaml`, `pnpm-workspace.yaml`, and `biome.json` define scripts, dependencies, pnpm
-  behavior, and formatting. Workspace settings include `autoInstallPeers: false` and `shellEmulator: true`.
+  behavior, and formatting. Workspace settings deliberately disable peer auto-installation and pnpm 11's
+  default release-age delay, while allowing only the `simple-git-hooks` dependency build.
 - `renovate.json` only extends `github>s-theo/dotfiles`; keep dependency policy in the shared preset.
 
 ## Commands
