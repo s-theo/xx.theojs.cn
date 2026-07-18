@@ -1,63 +1,98 @@
-# AGENTS.md - xx.theojs.cn
+# AGENTS.md — xx.theojs.cn
 
-## 项目概览
+> Scope: the repository root and every subdirectory. There are currently no nested `AGENTS.md` files. Add one
+> only when a subtree has genuinely different rules, and document only the differences from this file.
 
-这是 `https://xx.theojs.cn` 的 VitePress 站点，内容主题是玄学宝典，覆盖传统五术书籍与相关经典。站点源码以 Markdown 内容为主，VitePress 配置集中在 `.vitepress/`。
+## Project and toolchain
 
-## 工作流程
+This is the Chinese VitePress site at `https://xx.theojs.cn`. Its Markdown collection covers the five
+traditional arts (山、医、命、相、卜), spiritual pets, and related classics.
 
-开始修改前必须先在仓库根目录执行 `git pull`，然后阅读本文件。修改完成后至少运行：
+- Use Node.js `>=22.22.1`; the current `lint-staged@17.0.8` dependency requires this minimum.
+- Use the `pnpm@11.14.0` version declared in `package.json#packageManager` and the root `pnpm-lock.yaml`.
+- The main stack is VitePress 2 alpha, Vite 8, Vue 3, `@theojs/lumen`, and `vitepress-plugin-llms`.
+- Biome is the only formatter and import organizer. Its linter is disabled; do not introduce Prettier.
+- There are no `test`, `lint`, `typecheck`, or browser-test scripts. A VitePress build is the main integration
+  check.
 
-```bash
-pnpm run format:check
-pnpm run build
-git diff --check
-```
+## Before making changes
 
-若改动了依赖或 lockfile，先运行：
+1. Read this file from the repository root. Run `git status --short --branch` and `git status` to inspect the
+   branch, upstream, ahead/behind state, index, untracked files, and any Git operation in progress.
+2. Preserve existing work. Do not automatically stash, reset, clean, rebase, or overwrite modified target files.
+3. When synchronization is needed and `main` is clean, use only `git pull --ff-only`. Stop and report if the
+   branch is unclear, the worktree is dirty, or a fast-forward is impossible.
+4. Stay within Theo's explicit authorization. Commits, pushes, PR changes, merges, deployments, and branch
+   deletion require separate approval.
+
+## Important paths
+
+- `content/` is the VitePress `srcDir`; Markdown paths determine public routes, and `content/index.md` maps to `/`.
+- `content/index.md` contains the home-page frontmatter, hero, Notice, actions, and `<Underline />`.
+- `content/public/` contains root-served static assets such as the favicon, manifest, and robots file.
+- `.vitepress/config.mts` assembles the sitemap, theme, Algolia search, SEO, llms plugin, and Vue compiler options.
+- `.vitepress/configs/` contains nav, sidebar, search, head, social-link, and `transformPageData` modules.
+- `.vitepress/data/` and `.vitepress/theme/index.ts` contain Lumen Aside/Footer data, layout slots, global
+  components, and Umami initialization.
+- `package.json`, `pnpm-lock.yaml`, `pnpm-workspace.yaml`, and `biome.json` define scripts, dependencies, pnpm
+  behavior, and formatting. Workspace settings include `autoInstallPeers: false` and `shellEmulator: true`.
+- `renovate.json` only extends `github>s-theo/dotfiles`; keep dependency policy in the shared preset.
+
+## Commands
 
 ```bash
 pnpm install --frozen-lockfile
+pnpm run dev
+pnpm run build
+pnpm run preview
+pnpm run format:check
+pnpm run format
 ```
 
-## 目录结构
+`format` and the pre-commit lint-staged hook rewrite files; use `format:check` for a check-only run. Installation
+writes `node_modules` and may run allow-listed scripts, builds write `.vitepress/dist`, and dev/preview start
+long-running servers. `pnpm run upall` changes dependency files. Do not edit the lockfile manually;
+`pnpm-workspace.yaml` controls which dependencies may run install or build scripts.
 
-- `content/`：VitePress 的 `srcDir`，站点页面都从这里读取。
-- `content/index.md`：首页配置，包含 hero、Notice 和首页 actions。
-- `content/public/`：公开静态资源，会映射到站点根路径。
-- `content/山/`、`content/医/`、`content/命/`、`content/相/`、`content/卜/`：五术主体内容。
-- `content/灵宠/`：灵宠专题内容。
-- `content/相关经典/`：道经、淮南子、三字经等相关经典。
-- `.vitepress/config.mts`：站点主配置，组合 head、nav、sidebar、search、themeConfig、llms 插件等。
-- `.vitepress/configs/`：VitePress 配置拆分模块。
-- `.vitepress/configs/nav.ts`：顶部导航。
-- `.vitepress/configs/sidebar.ts`：各内容分区的侧边栏。
-- `.vitepress/data/AsideData.ts`：Lumen Aside 推广卡片数据。
-- `.vitepress/data/FooterData.ts`：Lumen Footer 分组链接。
-- `.vitepress/theme/index.ts`：扩展默认主题并注册 Lumen 组件。
-- `netlify.toml`：Netlify 构建配置，使用 Node 22，构建命令为 `pnpm build`，发布目录为 `.vitepress/dist`。
+## Content, routing, and theme rules
 
-## VitePress 维护规则
+- `srcDir: 'content'` and `cleanUrls: true`. Public page URLs omit `.md` and `.html`; `nav.ts` uses root-absolute
+  internal paths.
+- Update the relevant sidebar when adding, renaming, or moving a page. Change nav only for top-level entry
+  changes. Moving a file also changes its public URL, canonical URL, sitemap entry, edit link, search result, and
+  llms output.
+- Every route entry in `sidebar.ts` uses `base: '/'`. Child items must not define `base`; every page `link` must
+  be the root-absolute path of its actual Markdown file.
+- Do not rewrite sidebar links by positional zipping: the route object calls `Side_Lc`, `Side_Jd`, and `Side_Pr`
+  in a different order from their function definitions. Validate each item's intended page or H1, not only the
+  set of paths.
+- After nav, sidebar, or route changes, inspect `.vitepress/dist/llms.txt` and `llms-full.txt` in addition to
+  running the build. A successful build does not prove that labels point to the intended pages.
+- Preserve the home-page YAML, `hero.Notice`, `<Underline />`, the `<Links :items="...">` structure in
+  `content/提交书籍与纠错.md`, and existing `<br>` or `::: tip` structures. Do not mass-format, rename, or convert
+  content between simplified and traditional Chinese without authorization.
+- Keep one H1 per content page except the home page. `transformPageData.ts` derives SEO data from relative paths
+  and titles; path or title changes require canonical and metadata checks.
+- Sponsored links exist on the home page and in `.vitepress/data/`. Preserve `rel: 'sponsored noreferrer'` on
+  existing sponsored links and add it to new sponsored links.
+- The theme extends `DefaultTheme` with Lumen slots and global components. Register new Markdown components in
+  the theme entry. Do not remove Lumen styles, the `iconify-icon` custom-element option, or the rolldown-vite
+  type-compatibility comment above the llms plugin without rebuilding.
+- Theme code participates in SSR; do not access `window` or `document` at module scope. `VITE_UMAMI_ID` and
+  `VITE_UMAMI_SRC` are bundled into client code, so never use them for secrets or commit deployment values.
+- `.vitepress/dist`, `.vitepress/cache`, and `node_modules` are generated or dependency directories. Do not edit
+  or commit them.
 
-- `config.mts` 已设置 `srcDir: 'content'` 和 `cleanUrls: true`，页面路径以 `content/` 下的 Markdown 文件路径为准。
-- 新增栏目时，需要同时更新 `content/`、`.vitepress/configs/nav.ts` 和 `.vitepress/configs/sidebar.ts`。
-- `nav.ts` 的内部链接使用 `/` 开头的绝对路径，不要带 `.md` 或 `.html` 后缀。
-- `sidebar.ts` 当前按分区使用 `base`；深层嵌套条目优先使用 `/分区/目录/文件名` 绝对路径，避免 `vitepress-plugin-llms` 不能正确解析继承 `base` 后的相对链接。
-- 外链推广数据在 `AsideData.ts` 和 `FooterData.ts`，调整 sponsor 链接时保留必要的 `rel: 'sponsored noreferrer'`。
-- `summary` 是正确拼写，不要再写成 `sunmmary`。
+## Validation matrix
 
-## 格式化
+| Change | Minimum validation |
+| --- | --- |
+| `AGENTS.md` only | `git diff --check`; `git diff --name-only`; `git status --short`. No build is needed for instruction-only changes. |
+| Content, nav/sidebar, SEO, theme, Lumen data, VitePress configuration, or static assets | `pnpm run format:check`; `pnpm run build`; `git diff --check`. |
+| Nav/sidebar changes or page additions, moves, or renames | Run the previous row, then compare every route with `content/`, `sitemap.xml`, `llms.txt`, `llms-full.txt`, and per-page Markdown output; scan all internal targets and anchors. |
+| `package.json`, `pnpm-lock.yaml`, or pnpm configuration | Update with the declared pnpm version; run `pnpm install --frozen-lockfile`, `pnpm run format:check`, `pnpm run build`, and `git diff --check`. |
+| Browser-side interaction | Build, then run `pnpm run preview` (or `pnpm run dev` during development) and verify the behavior manually. |
 
-本仓库已从 Prettier 迁移到 Biome：
-
-- `pnpm run format`：执行 `biome check --write .`
-- `pnpm run format:check`：执行 `biome check .`
-- `lint-staged`：执行 `biome check --write --no-errors-on-unmatched`
-
-不要重新引入 `prettier`、Prettier 插件、`.prettierrc` 或 `.prettierignore`。Biome 配置位于 `biome.json`，并排除了 `.vitepress/dist`、`.vitepress/cache`、`node_modules` 等生成或依赖目录。
-
-## 注意事项
-
-- `.vitepress/dist` 是构建产物，已在 `.gitignore` 中忽略，不要手动编辑或提交。
-- 内容文件数量较多，批量改 Markdown 前先缩小范围并确认目标路径。
-- 搜索或检查内容优先用 `rg` / `rg --files`。
+Before handoff, inspect staged, unstaged, and untracked files and confirm that only authorized files changed.
+Recheck the staged diff after any pre-commit hook. There are no tracked GitHub Actions workflows; inspect live PR
+checks when CI status matters, and do not infer a provider from repository files.
