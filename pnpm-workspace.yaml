@@ -1,4 +1,2 @@
 autoInstallPeers: false
-allowBuilds:
-  simple-git-hooks: true
 minimumReleaseAge: 0

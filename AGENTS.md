@@ -41,7 +41,7 @@ traditional arts, spiritual pets, and related classics.
   components, and Umami initialization.
 - `package.json`, `pnpm-lock.yaml`, `pnpm-workspace.yaml`, and `biome.json` define scripts, dependencies, pnpm
   behavior, and formatting. Workspace settings deliberately disable peer auto-installation and the release-age
-  delay, while allowing only the `simple-git-hooks` dependency build.
+  delay.
 - `renovate.json` only extends `github>s-theo/dotfiles`; keep dependency policy in the shared preset.
 
 ## Commands
@@ -55,10 +55,9 @@ pnpm run check
 pnpm run format
 ```
 
-`format` and the pre-commit lint-staged hook rewrite files; use `check` for a check-only run. Installation
-writes `node_modules` and may run allow-listed scripts, builds write `.vitepress/dist`, and dev/preview start
-long-running servers. `pnpm run upall` changes dependency files. Do not edit the lockfile manually;
-`pnpm-workspace.yaml` controls which dependencies may run install or build scripts.
+`format` rewrites files; use `check` for a check-only run. Installation writes `node_modules`; builds write
+`.vitepress/dist`; dev/preview start long-running servers. `pnpm run upall` changes dependency files. Do not edit
+the lockfile manually; `pnpm-workspace.yaml` controls install and build-script policy.
 
 ## Content, routing, and theme rules
 
