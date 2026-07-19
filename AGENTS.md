@@ -8,9 +8,7 @@
 This is the Chinese VitePress site at `https://xx.theojs.cn`. Its Markdown collection covers the five
 traditional arts, spiritual pets, and related classics.
 
-- Use a Node.js release that satisfies the current toolchain's `engines` metadata. Check the active boundary in
-  `package.json`, `pnpm-lock.yaml`, and installed package metadata before installing or running hooks; do not
-  preserve dependency-derived minimums here.
+- Use the Node.js release declared in `.nvmrc`.
 - Use the pnpm release declared in `package.json#packageManager`; `pnpm-lock.yaml` and `pnpm-workspace.yaml` are
   authoritative for dependency resolution and workspace behavior.
 - The main stack is VitePress, Vite, Vue, `@theojs/lumen`, and `vitepress-plugin-llms`. Read exact dependency
