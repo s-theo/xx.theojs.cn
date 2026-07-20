@@ -16,5 +16,5 @@
     "vitepress-plugin-llms": "^1.13.3",
     "vue": "^3.5.40"
   },
-  "packageManager": "pnpm@11.14.0"
+  "packageManager": "pnpm@11.15.1"
 }
