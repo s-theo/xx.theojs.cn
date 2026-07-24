@@ -22,7 +22,7 @@ export default {
     umamiAnalytics({
       id: import.meta.env.VITE_UMAMI_ID,
       src: import.meta.env.VITE_UMAMI_SRC,
-      domains: 'xx.theojs.cn'
+      domains: 'xx.theojs.net'
     })
     app.component('Underline', Underline)
     app.component('Links', Links)

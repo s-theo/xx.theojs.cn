@@ -1,11 +1,11 @@
-# AGENTS.md — xx.theojs.cn
+# AGENTS.md — xx.theojs.net
 
 > Scope: the repository root and every subdirectory. There are currently no nested `AGENTS.md` files. Add one
 > only when a subtree has genuinely different rules, and document only the differences from this file.
 
 ## Project and toolchain
 
-This is the Chinese VitePress site at `https://xx.theojs.cn`. Its Markdown collection covers the five
+This is the Chinese VitePress site at `https://xx.theojs.net`. Its Markdown collection covers the five
 traditional arts, spiritual pets, and related classics.
 
 - Use the Node.js release declared in `.nvmrc`.

@@ -7,7 +7,7 @@ hero:
   text: 山医命相卜
   tagline: 中华传统五术书籍传世经典著作
   image:
-    src: https://doc.theojs.cn/index/home.webp
+    src: https://doc.theojs.net/index/home.webp
     alt: home
     fetchpriority: high
     width: 320
@@ -24,11 +24,11 @@ hero:
 
     - theme: alt author
       text: Theo-Docs
-      link: https://doc.theojs.cn
+      link: https://doc.theojs.net
 
     - theme: alt logo
       text: Lumen
-      link: https://lumen.theojs.cn
+      link: https://lumen.theojs.net
 ---
 
 <Underline />

@@ -7,9 +7,9 @@ export const Footer_Data: FooterData = {
       icon: 'heroicons:link-16-solid',
       title: '相关链接',
       links: [
-        { name: 'Theo-Docs', link: 'https://doc.theojs.cn/' },
+        { name: 'Theo-Docs', link: 'https://doc.theojs.net/' },
         { name: 'VitePress', link: 'https://vitepress.dev/' },
-        { name: 'Lumen', link: 'https://lumen.theojs.cn/' }
+        { name: 'Lumen', link: 'https://lumen.theojs.net/' }
       ]
     }
   ]

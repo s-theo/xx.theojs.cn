@@ -2,7 +2,7 @@ import type { HeadConfig } from 'vitepress'
 
 export const head: HeadConfig[] = [
   // 图标优先加载
-  ['link', { rel: 'icon', href: 'https://i.theojs.cn/logo/avatar-mini.webp' }],
+  ['link', { rel: 'icon', href: 'https://i.theojs.net/logo/avatar-mini.webp' }],
   ['link', { rel: 'icon', type: 'image/png', href: '/favicon-96x96.png', sizes: '96x96' }],
   ['link', { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }],
   ['link', { rel: 'shortcut icon', href: '/favicon.ico' }],
