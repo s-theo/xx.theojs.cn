@@ -78,8 +78,7 @@ the lockfile manually; `pnpm-workspace.yaml` controls install and build-script p
   content between simplified and traditional Chinese without authorization.
 - Keep one H1 per content page except the home page. `transformPageData.ts` derives SEO data from relative paths
   and titles; path or title changes require canonical and metadata checks.
-- Sponsored links exist on the home page and in `.vitepress/data/`. Preserve `rel: 'sponsored noreferrer'` on
-  existing sponsored links and add it to new sponsored links.
+- Do not add or sync scientific-internet, AI, streaming, or airport-review content, links, promotions, or data.
 - The theme extends `DefaultTheme` with Lumen slots and global components. Register new Markdown components in
   the theme entry. Do not remove Lumen styles, the `iconify-icon` custom-element option, or the llms plugin
   without rebuilding.
